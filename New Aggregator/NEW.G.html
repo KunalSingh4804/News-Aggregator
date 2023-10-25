@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NEWS AGGREGATOR</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name="keywords" content="tech, news, python, javascript, aggregator" />
+    <meta name="description" content="A minimal tech news aggregator" />
+    <meta name="language" content="ES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- OpenGraph Tags -->
+    <meta name="og:title" content="FrontPage" />
+    <meta name="og:type" content="News" />
+
+    <!-- Importing Documents -->
+    
+    <link rel="shortcut icon" href="https://cdn.glitch.com/366c5838-3763-4787-9bd2-8eefd6b529ab%2FFrontPage-favicon.png?v=1623623259746" />
+    
+    <script src="https://kit.fontawesome.com/8c8c505dd2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Introductory Information -->
+    
+
+    <div class="intro-info">
+        <h1>NEWS AGGREGATOR</h1>
+        <p>A minimal tech news aggregator</p>
+    </div>
+
+    <!-- Story Templates -->
+    <div class="story">
+        <div id="nyt">
+            <img class="image" src="img1.png" alt="">
+            <b><u><p class="title">Making sense of the way AI Thinks</p></u></b>
+            <p class="description">We might soon have artificial intelligence-based assistants that are completely personalized to data specific to us. Google is already attempting a first version of this.</p>
+            <p class="author"></p>
+            <p class="source">The Wall Street Journal</p>
+            <a class="link" href="https://www.livemint.com/ai/artificial-intelligence/making-sense-of-the-way-ai-thinks-11698070270255.html" target="_blank">Read More</a>
+        </div>
+    </div>
+
+    <div class="story">
+        <div id="techCrunch">
+            <img class="image" src="img2.png" alt="">
+            <b><u><p class="title">Apple Scary Fast event: MacBook Air, MacBook Air Pro and everything expected</p></u></b>
+            <p class="description">Apple's 'Scary Fast' event on October 30 sparks anticipation for new MacBooks and the rumored M3 chipset.</p>
+            <p class="author"></p>
+            <p class="source">livemint</p>
+            <a class="link" href="https://www.livemint.com/technology/flipkart-dussehra-sale-2023-massive-discount-on-iphone-13-up-to-rs-40-000-heres-how-deal-works-11698215182611.html" target="_blank">Read More</a>
+        </div>
+    </div>
+
+    <div class="story" id="last-story">
+        <div id="cnet">
+            <img class="image" src="img3.png" alt="">
+            <b><u><p class="title">Back Back
+                Qualcomm announces Windows laptop AI-powered chip to outpace Apple's Mac processors in select tasks</p></u></b>
+            <p class="description">Demand for laptops with AI capabilities expected to increase, driven by applications like image generation</p>
+            <p class="author"></p>
+            <p class="source">livemint</p>
+            <a class="link" id="story-link" href="#" target="_blank">Read More</a>
+        </div>
+    </div>
+
+    <!-- Footer Area -->
+    <div class="footer">
+        <ul>
+            <li>
+                <p id="creator">Created By <a href="https://www.linkedin.com/in/kunal-singh-087272226/" target="_blank">KSRcodes (2023)</a></p>
+                <a href="https://github.com/KunalSingh4804/News-Aggregator.git" target="_blank">
+                    <p class="github"><i class="fab fa-github"></i></p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* General CSS */
+
+* {
+    font-family: Lato, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: white;
+}
+
+body {
+    text-align: center;
+}
+
+img {
+    align-items: stretch;
+}
+
+
+/* Element Based CSS */
+
+#popup {
+    border-radius: 15px;
+    padding: 1.5% 2% 1.5% 2%;
+    background-color: #108f29;
+    color: white;
+    top: 0px;
+    width: 40%;
+    margin: 1% 30% 0 30%;
+}
+
+#popup i {
+    color: white;
+    top: 0;
+    padding: 0;
+    position: absolute;
+    top: 3%;
+    left: 72.3%;
+}
+
+.intro-info {
+    padding-top: 1%;
+}
+
+.title {
+    width: 73%;
+    padding-left: 13%;
+}
+
+.description {
+    width: 73%;
+    text-align: left;
+    padding-left: 15%;
+}
+
+.source {
+    padding-bottom: 3%;
+}
+
+.story {
+    width: 30%;
+    display: inline-block;
+    padding-top: 5%;
+    vertical-align: top;
+}
+
+.story img {
+    height: 200px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+    background-color: #108f29;
+    border-radius: 15px;
+}
+
+
+/* Footer Area CSS */
+
+.footer {
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 0.5%;
+}
+
+.footer p {
+    font-size: 125%;
+    display: inline;
+}
+
+.footer i {
+    font-size: 125%;
+    color: white;
+}
+
+.footer li {
+    display: inline;
+}
+
+a:hover {
+    color: #d1d1d1;
+}
+
+
+/* Button leading to Github Repository for FrontPage */
+
+.github {
+    position: absolute;
+    right: 0;
+    margin-right: 3%;
+}
+
+.github i:hover {
+    color: #d1d1d1;
+}
+
+
+/* Media Query for Phones */
+
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0;
+    }
+    #popup {
+        padding: 4%;
+        width: 80%;
+        margin: 3% 10% 0% 5%;
+    }
+    #popup i {
+        top: 3%;
+        left: 86.5%;
+        padding-right: 11%;
+    }
+    #popup p {
+        width: 90%;
+        margin: auto;
+    }
+    .story {
+        display: block;
+        width: 100%;
+    }
+    .image {
+        width: 90%;
+    }
+    #last-story {
+        padding-bottom: 12%;
+    }
+    #creator {
+        margin-right: 15%;
+    }
+    .github {
+        padding-right: 1%;
+    }
+}
+
+</style>
+
+
+<script>
+    // Change this URL if running locally
+// It should look something like this: http://127.0.0.1:5000/news/
+var api_url = 'https://this-front-page.herokuapp.com/news/'
+
+// Used when X icon on popup is clicked. Hides popup.
+function close_popup() {
+	document.getElementById("popup").style.display = "none";
+}
+
+// Used to fetch information from API
+async function get_data() {
+	var data = await fetch(api_url);
+	update_elements([await data.json()]);
+}
+
+// Used to update the page with information from API
+function update_elements(data) {
+	sources = ["nyt", "techCrunch", "cnet"]
+	classes = ["title", "description", "author", "source", "image", "link"]
+
+	var x = 0;
+	var y = 0;
+	var sourcesLength = sources.length - 1;
+	var classesLength = classes.length - 1;
+	// Iterates through elements and changes then based on id/class name
+	while (y <= sourcesLength) {
+		var id = sources[y];
+		while (x <= classesLength) {
+			var targetData = data[0][sources[y]][classes[x]]
+			if (classes[x] == "image") {
+				document.getElementById(id).getElementsByClassName(classes[x])[0].src = targetData;
+				document.getElementById(id).getElementsByClassName(classes[x])[0].alt = data[0][sources[y]]["alt"];
+			} else if (classes[x] == "link") {
+				document.getElementById(id).getElementsByClassName(classes[x])[0].href = targetData;
+			} else {
+				document.getElementById(id).getElementsByClassName(classes[x])[0].innerHTML = targetData;
+			}
+			x++
+		}
+		x = 0
+		y++
+	}
+}
+
+get_data();
+
+</script>
+
+</html>
